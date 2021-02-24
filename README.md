@@ -1,5 +1,5 @@
 # kset
-Access kubernetes node and switch kubernetes Namespaces
+A Kubernetes plugin to access kubernetes node and switch kubernetes Namespaces.
 
 # Installation
 
