@@ -5,7 +5,7 @@ A Kubernetes plugin to access kubernetes node and switch kubernetes Namespaces.
 
 To install kset you can just run this command:
 ```
-$ curl https://raw.githubusercontent.com/VipinPS/kset/main/kset -o /usr/local/bin/kubectl-kset && chmod +x $_
+curl https://raw.githubusercontent.com/VipinPS/kset/main/kset -o /usr/local/bin/kubectl-kset && chmod +x $_
 ```
 To switch namespace use command and then enter the namespace name:
 ```
