@@ -2,6 +2,8 @@
 
 RETVAL=0
 
+# Check kubectl installed or not #
+
 if [ ! -x "$(which kubectl 2>/dev/null)" ]; then
   echo "Kubectl not Installed. Please follow installation instructions from https://kubernetes.io/docs/tasks/kubectl/install/" >&2
   exit 1
@@ -27,10 +29,8 @@ setnode() {
    IMAGE="alpine"
    POD="$NODE-exec-$(env LC_CTYPE=C tr -dc a-z0-9 < /dev/urandom | head -c 6)"
 
-   # Check the node existance
    kubectl get node "$NODE" >/dev/null || exit 1
 
-   #nsenter JSON overrrides
    OVERRIDES="$(cat <<EOT
 {
   "spec": {
