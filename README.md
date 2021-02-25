@@ -9,9 +9,9 @@ curl https://raw.githubusercontent.com/VipinPS/kset/main/kset -o /usr/local/bin/
 ```
 To switch namespace use command and then enter the namespace name:
 ```
-$ kubectl kset setns
+$ kubectl kset ns
 ```
 To access Kubernetes nodes use command and then enter the node name which you want to access:
 ```
-$ kubectl kset setnode 
+$ kubectl kset node 
 ```
