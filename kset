@@ -3,7 +3,7 @@
 RETVAL=0
 
 if [ ! -x "$(which kubectl 2>/dev/null)" ]; then
-  echo "Kubectl not Installed. Please install kubectl (https://kubernetes.io/docs/tasks/kubectl/install/)" >&2
+  echo "Kubectl not Installed. Please follow installation instructions from https://kubernetes.io/docs/tasks/kubectl/install/" >&2
   exit 1
 fi
 
