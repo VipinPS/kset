@@ -60,13 +60,13 @@ kubectl run --rm --image $IMAGE --overrides="$OVERRIDES"  --restart=Never -ti "$
 
 case "$1" in
    "")
-      echo "Usage: $0 [setns] [setnode]"
+      echo "Usage: $0 [ns] [node]"
       RETVAL=1
       ;;
-   setns)
+   ns)
       setns
       ;;
-   setnode)
+   node)
       setnode
 esac
 
